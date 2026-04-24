@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "Ana": {
             cat: "Obiecte",
             desc: "Vază din lut, pictată manual cu motive florale și detalii rustice întruchipând un chip de femeie cu elemente tradiționale.",
-            dim: "30 cm înălțime"
+            dim: "30 cm"
         },
         "Amarul": {
             cat: "Obiecte",
@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "Frumoasele": {
             cat: "Obiecte",
             desc: "Vază din lut pictată manual cu textură mată, ce include detalii simbolice ale legendei tradiționale 'Sânzienelor'",
-            dim: "Variabil"
+            dim: "45 cm"
         },
         "Ale ei 100 de ciori": {
             cat: "Obiecte",
@@ -339,7 +339,7 @@ function renderCart() {
                     ${
                         item.isCustom
                         ? `<div class="custom-desc-line">
-                              Comandă personalizată: ${item.desc}
+                             ${item.desc}
                            </div>`
                         : `<div class="sub">${item.qty} × ${formatPrice(item.price)} lei</div>`
                     }
