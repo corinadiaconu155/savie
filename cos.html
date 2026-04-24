@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savie - Coș</title>
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Italianno&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body class="pagina-cos">
+
+<header class="main-header">
+    <a href="index.html" class="logo">Savie</a>
+</header>
+
+<div class="full-width-bar">
+    <div class="bar-content">
+        <div class="dots">
+            <span></span><span></span>
+            <span></span><span></span>
+        </div>
+        <span class="bar-title">Cumpărăturile tale</span>
+        </span>
+    </div>
+</div>
+
+<main class="cart-wrapper">
+
+    
+    <div id="cart-container" class="cart-list"></div>
+
+    <!-- dreapta -->
+    <div class="cart-summary">
+        <h2>Comanda ta:</h2>
+        <div id="total-box">Total: 0 lei</div>
+        <!-- formular ascuns la comanda -->
+<div id="checkout-modal" class="checkout-modal">
+    <div class="checkout-box">
+        <h2>Date de livrare</h2>
+        <input type="text" id="nume" placeholder="Nume">
+        <input type="text" id="prenume" placeholder="Prenume">
+        <input type="text" id="telefon" placeholder="Număr de telefon">
+        <input type="text" id="adresa" placeholder="Adresă">
+        <input type="email" id="email" placeholder="Email">
+        <button id="trimiteComanda">Trimite comanda</button>
+        <button id="inchideCheckout">Închide</button>
+    </div>
+</div>
+        <button class="checkout-btn" id="finalizeazaBtn">Finalizează comanda</button>
+    </div>
+
+</main>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script src="hover.js"></script>
+
+<footer class="site-footer">
+    <p>© Savie - Toate drepturile rezervate</p>
+</footer>
+</body>
+
+</html>

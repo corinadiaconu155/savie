@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savie - Personalizat</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Italianno&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<body class="pagina-personalizat">
+
+<!-- header -->
+<header class="main-header">
+    <a href="index.html" class="logo">Savie</a>
+    
+    <nav>
+        <ul class="nav-links">
+            <li><a href="picturi.html">Picturi</a></li>
+            <li><a href="obiecte.html">Obiecte</a></li>
+            <li><a href="personalizat.html" class="active">Personalizat</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- bara de titlu -->
+<div class="full-width-bar">
+    <div class="bar-content">
+
+        <div class="dots">
+            <span></span><span></span>
+            <span></span><span></span>
+        </div>
+
+        <span class="bar-title">Personalizat</span> 
+
+    </div>
+</div>
+
+<!-- main -->
+<main class="personalizat-wrapper">
+
+    <!-- cardul din stanga -->
+    <div class="personal-card">
+        <p class="card-text-top">Tu alegi,</p>
+        <div class="brush-icon"></div>
+        <p class="card-text-bottom">noi creăm!</p>
+    </div>
+
+    <!-- form din dreapta -->
+    <div class="personal-form">
+
+    <h3>Descrie ceea ce îți dorești:</h3>
+
+    <div class="input-row">
+        <input id="mesajPersonalizat" type="text" placeholder="Descriere (include obligatoriu un e-mail!)">
+        <button class="arrow" type="button">➤</button>
+    </div>
+
+    <p class="note">* odată ce trimiți comanda unică, vei primi un e-mail</p>
+
+    <button class="send-btn" id="trimitePersonalizat" type="button">Trimite!</button>
+
+    <p id="confirmareMsg"></p>
+    
+</div>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script src="hover.js"></script>
+</main>
+
+<footer class="footer">
+
+    <div class="footer-inner">
+
+        <div class="footer-left">
+            <h3>Despre noi</h3>
+
+            <div class="bar-content">
+                <div class="dots">
+                    <span></span><span></span>
+                    <span></span><span></span>
+                </div>
+                <span class="bar-title">Savie</span>
+            </div>
+        </div>
+
+        <div class="footer-right">
+            <p>Contacte:</p>
+            <p>Telefon: 078 90 53 8</p>
+            <p>E-mail: companysavie@gmail.com</p>
+            <p>Instagram: savie.art</p>
+        </div>
+
+    </div>
+
+</footer>

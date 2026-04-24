@@ -1,0 +1,1145 @@
+:root {
+    --bg-color: #fcfbf4;
+    --gray-fine: #616161;
+    --text-dark: #312E2A;
+    --logo-color: #504A43;
+    --btn-bg: #D9D9D9;
+    --uniform-space: 35px; 
+}
+
+* { 
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text-dark);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* header si cos */
+header {
+    width: 100%;
+    max-width: 1600px;
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top-nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-top: var(--uniform-space);
+}
+
+.logo {
+    font-family: 'Italianno', cursive;
+    font-size: 4.2rem;
+    color: var(--logo-color);
+    text-decoration: none;
+}
+
+.header-right {
+    position: absolute;
+    right: 0;
+    top: calc(var(--uniform-space) + 10px);
+    z-index: 10; /* Ne asigurăm că e deasupra */
+}
+
+.cart-icon-minimal {
+    display: block;
+    width: 26px;
+    height: 26px;
+    position: relative;
+}
+
+/* Corpul coșului */
+.cart-icon-minimal .body {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 16px;
+    border: 1.5px solid var(--text-dark);
+    border-radius: 3px;
+}
+
+/* Toarta coșului */
+.cart-icon-minimal .handle {
+    position: absolute;
+    top: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 8px;
+    border: 1.5px solid var(--text-dark);
+    border-bottom: none;
+    border-radius: 50% 50% 0 0;
+}
+
+/* meniu  */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    margin: 5px 0 var(--uniform-space) 0; 
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--gray-fine);
+    font-family: 'Italiana', serif;
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+/* continut */
+main {
+    width: 100%;
+    max-width: 1150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.headline {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 3.2rem;
+    margin-bottom: var(--uniform-space); /* Spațiu uniform deasupra imaginii */
+    line-height: 0.85;
+    text-align: center;
+    font-weight: 700;
+}
+
+.hero-box {
+    width: 100%;
+    height: 520px;
+    border: 1px solid var(--gray-fine);
+    border-radius: 20px;
+    background: url('imagini/pic.jpg') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+}
+
+/* buton principal */
+.btn-main {
+    padding: 18px 80px;
+    border-radius: 100px;
+    border: 1px solid var(--gray-fine);
+    background-color: var(--btn-bg);
+    font-family: 'Italiana', serif;
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: var(--text-dark);
+    transition: all 0.3s ease;
+}
+
+.btn-main:hover {
+    background-color: #fff;
+    transform: translateY(-3px);
+}
+
+/* adaptare (responsive) */
+@media (max-width: 992px) {
+    .headline { font-size: 2.8rem; }
+    .hero-box { height: 400px; }
+}
+
+@media (max-width: 600px) {
+    :root { --uniform-space: 20px; } 
+    .logo { font-size: 3rem; }
+    .nav-links { gap: 20px; }
+    .nav-links a { font-size: 1.1rem; }
+    .headline { font-size: 1.8rem; white-space: normal; }
+    .hero-box { height: 350px; }
+    .btn-main { padding: 14px 45px; font-size: 1.2rem; }
+}
+
+
+
+
+
+/* header (pagini) */
+* {
+    margin: 0;
+    padding: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fdfaf4;
+    color: #312E2A;
+    font-family: 'Italiana', serif;
+    line-height: 1.2;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+/* Chrome, Safari, Edge */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+/* header */
+.main-header {
+    text-align: center;
+    padding: 60px 0 30px;
+}
+
+.logo {
+    font-family: 'Italianno', cursive;
+    font-size: 6rem;
+    color: #504A43;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #312E2A;
+    font-size: 1.7rem;
+}
+
+.nav-links a.active {
+    border-bottom: 1px solid #312E2A;
+}
+
+/* bara gri cu denumiri */
+.full-width-bar {
+    background: #d9d9d9;
+    width: 100%;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #616161;
+    border-bottom: 1px solid #616161;
+    margin-bottom: 45px;
+}
+
+.bar-content {
+    width: 90%;
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1.6rem;
+}
+
+/* text bară */
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 50px;   
+    margin-top: 10px; 
+    
+}
+/* puncte de pe bara */
+.dots {
+    display: grid;
+    grid-template-columns: repeat(2, 10px);
+    grid-template-rows: repeat(2, 10px);
+    gap: 8px;
+}
+
+.dots span {
+    width: 10px;
+    height: 10px;
+    border: 1.2px solid #616161;
+    border-radius: 50%;
+    background: transparent;
+}
+
+/* puncte mari doar in modal */
+.modal-top-bar .dots {
+    grid-template-columns: repeat(2, 10px);
+    grid-template-rows: repeat(2, 10px);
+    gap: 8px;
+}
+
+.modal-top-bar .dots span {
+    width: 10px;
+    height: 10px;
+}
+/* grid */
+.content-wrapper {
+    width: 90%;
+    max-width: 1300px;
+    margin: auto;
+    padding-bottom: 80px;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 150px;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* text */
+.product-card h3 {
+    font-size: 1.3rem;
+    margin: 6px 0 0;
+    color: #2B2B2A;
+    line-height: 1.1;
+}
+.product-visual {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#modal-size {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #2B2B2A;
+}
+.price {
+    font-size: 3rem;
+    margin: 0;
+    color: #2B2B2A;
+    line-height: 1;
+}
+
+/* picturi */
+.pagina-picturi .img-holder {
+    background: #EAE3DB;
+    height: 520px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 55px;
+    border-radius: 35px;
+    transition: 0.25s;
+}
+
+.pagina-picturi .img-holder img {
+    max-width: 100%;
+    max-height: 100%;
+    border: 1px solid #616161;
+    border-radius: 0;
+}
+
+/* obiecte */
+.pagina-obiecte .img-holder {
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.pagina-obiecte .img-holder img {
+    max-width: 100%;
+    max-height: 100%;
+    border: 1px solid #616161;
+    border-radius: 40px;
+}
+
+/* hover */
+.pagina-picturi .img-holder:hover,
+.pagina-obiecte .img-holder:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+
+/* baza modal */
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-layout-container {
+    background: #fdfaf4;
+    width: 90%;
+    max-width: 1100px;
+    position: relative;
+}
+
+.close-modal {
+    position: absolute;
+    top: 5px;
+    right: 22px;
+    font-family: 'Italiana', serif;
+    font-size: 2.2rem;
+    font-weight: 400;
+    background: transparent;
+    border: none;
+    color: #312E2A;
+    cursor: pointer;
+    line-height: 1;
+    transition: 0.3s ease;
+    z-index: 9999;
+}
+
+/* bara de sus din pop up */
+.modal-top-bar {
+    height: 50px;
+    background: #EAE3DB;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+}
+
+/* punte din container */
+.breadcrumb-dots {
+    display: grid;
+    grid-template-columns: repeat(2, 10px);
+    grid-template-rows: repeat(2, 10px);
+    gap: 6px;
+    margin-right: 12px;
+}
+
+/* puncte */
+.breadcrumb-dots span {
+    width: 10px;
+    height: 10px;
+    border: 1.5px solid #616161;
+    border-radius: 50%;
+    background: transparent;
+    transform: translateZ(0);
+}
+
+/* text din breadcrumb */
+.breadcrumb-text {
+    font-size: 1.2rem;
+    color: #312E2A;
+}
+
+.modal-top-bar .breadcrumb-dots span {
+    border: 1.5px solid #616161 !important;
+}
+
+/* corpul modal */
+.modal-body {
+    display: flex;
+    gap: 50px;
+    padding: 30px;
+    align-items: stretch;
+    height: 500px;
+}
+
+/* stânga + dreapta */
+.product-visual,
+.product-info-side {
+    display: flex;
+    flex-direction: column;
+}
+
+/* imagine */
+.product-image-border img {
+    max-width: 100%;
+    max-height: 420px;
+    border: 1px solid #616161;
+}
+
+.product-info-side {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+/* sus */
+.top-info {
+    flex-shrink: 0;
+}
+
+.top-info h2 {
+    font-size: 3.6rem;
+    margin: 0;
+}
+
+.top-info p {
+    margin-top: 6px;
+    color: #6B645C;
+}
+
+/* spatiere generala */
+.bottom-info {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 110px;
+    width: 100%;
+}
+
+/* cantitate */
+.qty-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+   transform: translateY(40px);
+    align-self: flex-start;
+}
+
+.qty-custom-wrapper {
+    display: flex;
+    width: 140px;
+    height: 42px;
+    border: 1px solid #C9C3BC;
+    overflow: hidden;
+}
+
+.qty-input {
+    width: 100%;
+    text-align: center;
+    border: none;
+    outline: none;
+    font-family: 'Italiana', serif;
+}
+
+.arrow-up,
+.arrow-down {
+    width: 42px;
+    background: #EAE3DB;
+    border: none;
+    cursor: pointer;
+}
+
+/* buton cumpara */
+.buy-btn {
+    margin: 0;
+    padding: 12px 28px;
+    border-radius: 40px;
+    font-size: 1.6rem;
+    font-family: 'Italiana', serif;
+    background: #EAE3DB;
+    border: 1px solid #B9B5B0;
+    cursor: pointer;
+    align-self: flex-end;
+    position: relative;
+    top: 160px; /
+}
+
+.buy-btn:hover {
+    background: #d6d0c8;
+}
+
+
+/* pagina personalizat */
+.pagina-personalizat {
+    background: #fdfaf4;
+    font-family: 'Italiana', serif;
+    min-height: 100vh;
+}
+
+/* afisarea */
+.personalizat-wrapper {
+    display: grid;
+    grid-template-columns: 320px 1fr; 
+    column-gap: 120px;
+    align-items: start;
+    justify-content: center;
+    margin: 40px auto 0 auto;
+    max-width: 1100px;
+    padding: 0 20px;
+}
+
+/* cardul din stanga */
+.personal-card {
+    width: 320px;
+    height: 450px;
+    background: #d9d9d9;
+    border: 1px solid #616161;
+    position: relative;
+    flex-shrink: 0;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.05);
+}
+
+/* textul din card */
+.card-text-top {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 2.2rem;
+    text-align: right;
+    color: #312E2A;
+}
+
+.card-text-bottom {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 2.2rem;
+    text-align: right;
+    color: #312E2A;
+}
+
+/* iconita din mijlocul cardului */
+.brush-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 160px;
+    height: 160px;
+    background: url("imagini/brush.png") no-repeat center;
+    background-size: contain;
+    filter: brightness(0) saturate(100%) invert(63%) sepia(8%) saturate(200%) hue-rotate(10deg);
+}
+
+/* componentele din dreapta */
+.personal-side-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    max-width: 500px;
+}
+
+/* titlu */
+.personal-form h3 {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+    font-weight: normal;
+}
+
+/* input */
+.input-row {
+    display: flex;
+    border: 1px solid #312E2A;
+    background: #fff;
+    height: 45px;
+    width: 100%;
+}
+
+.input-row input {
+    flex: 1;
+    border: none;
+    padding: 0 12px;
+    outline: none;
+    font-family: 'Italiana', serif;
+    font-size: 1.1rem;
+}
+
+.input-row button {
+    width: 45px;
+    border: none;
+    border-left: 1px solid #312E2A;
+    background: #d9d9d9;
+    cursor: pointer;
+}
+
+/* notă */
+.note {
+    font-size: 0.85rem;
+    margin-top: 10px;
+    font-style: italic;
+    color: #312E2A;
+}
+
+/* buton */
+.send-btn {
+    margin-top: 50px;
+    padding: 14px 70px;
+    border-radius: 50px;
+    border: 1px solid #312E2A;
+    background: #d9d9d9;
+    font-family: 'Italiana', serif;
+    font-size: 1.8rem;
+    cursor: pointer;
+    box-shadow: 3px 3px 0px rgba(0,0,0,0.15);
+    transition: 0.2s;
+}
+
+.send-btn:hover {
+    background: #cecece;
+    transform: translateY(-2px);
+}
+/* footer la personalizat */
+.footer {
+    width: 100%;
+    background: #d9d9d9;
+    display: flex;
+    justify-content: center; 
+    margin-top: 80px;
+    padding: 40px 0;
+    border-top: 1px solid #312E2A;
+    border-bottom: 1px solid #312E2A;
+}
+
+.footer-inner {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    justify-content: flex-start; 
+    gap: 400px; 
+}
+
+/* informatia din footer*/
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: -20px;
+}
+
+.footer-left h3 {
+    font-size: 2.2rem;
+    margin-bottom: 8px;
+    position: relative;
+    top: -6px;
+}
+
+/* contacte din info footer */
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;  
+    text-align: right;      
+    direction: rtl;         
+}
+
+.footer-right p {
+    margin: 4px 0;
+    direction: ltr; 
+}
+
+
+/* pagina cos */
+.pagina-cos {
+    background: #fdfaf4;
+    margin: 0;
+    padding: 0;
+}
+
+/* layout principal */
+.cart-wrapper {
+    width: 90%;
+    max-width: 1100px;
+    margin: 60px auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+}
+
+/* lista de produse din stanga */
+
+.cart-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* card produs */
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #EAE3DB;
+    border-radius: 30px;
+    padding: 20px 30px;
+    font-family: 'Italiana', serif;
+    transition: 0.3s ease;
+}
+
+.cart-item:hover {
+    transform: scale(1.01);
+}
+
+/* partea stângă */
+.cart-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* imagine produs */
+.cart-img {
+    width: 90px;
+    height: 90px;
+    border-radius: 15px;
+    border: 1px solid #aaa;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    flex-shrink: 0;
+}
+
+/* titlu produs */
+.cart-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    font-size: 1.6rem;
+}
+
+.sub {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* partea dreaptă */
+.cart-right {
+    font-size: 1.4rem;
+}
+
+/* buton delete */
+.cart-delete {
+    border: none;
+    background: transparent;
+    font-size: 1.6rem;
+    font-family: 'Italiana', serif;
+    cursor: pointer;
+    margin-left: 15px;
+    color: #312E2A;
+}
+
+/* container cu comanda */
+.cart-summary {
+    background: #EAE3DB;
+    border-radius: 30px;
+    padding: 30px;
+    height: fit-content;
+    font-family: 'Italiana', serif;
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+    justify-content: flex-start; 
+}
+
+/* titlu */
+.cart-summary h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* total */
+#total-box {
+    font-size: 1.6rem;
+    margin-bottom: 30px;
+}
+
+/* buton finalizare comanda */
+.checkout-btn {
+    padding: 15px;
+    border: none;
+    border-radius: 40px;
+    background: #d9d9d9;
+    color: #312E2A;
+    font-size: 1.2rem;
+    font-family: 'Italiana', serif;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.checkout-btn:hover {
+    background: #cfcfcf;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+/* titlu sus */
+.full-width-bar {
+    width: 100%;
+    background: #e6e6e6;
+    padding: 15px 0;
+}
+
+.bar-content {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* punte */
+.dots {
+    display: grid;
+    grid-template-columns: repeat(2, 8px);
+    gap: 5px;
+}
+
+.dots span {
+    width: 8px;
+    height: 8px;
+    border: 1px solid #312E2A;
+    border-radius: 50%;
+}
+
+/* titlu */
+.bar-title {
+    font-family: 'Italiana', serif;
+    font-size: 1.8rem;
+}
+.site-footer {
+    width: 100%;
+    background: #d9d9d9;
+    padding: 20px 0;
+    margin-top: 60px;
+    text-align: center;
+    font-family: 'Italiana', serif;
+    font-size: 1rem;
+    color: #312E2A;
+    border-top: 1px solid #616161;
+}
+
+
+/* adaptiv (responsive) */
+
+@media (max-width: 900px) {
+    .cart-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .cart-summary {
+        order: -1;
+    }
+}
+/* plasare comanda */
+
+.checkout-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(6px);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.checkout-box {
+    background: linear-gradient(135deg, #f6f1ec, #eae3db);
+    padding: 32px;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    width: 340px;
+
+    box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+    border: 1px solid rgba(255,255,255,0.4);
+
+    font-family: 'Montserrat', sans-serif;
+
+    animation: popIn 0.3s ease;
+}
+
+/* animație apariție */
+@keyframes popIn {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* titlu */
+.checkout-box h2 {
+    margin: 0;
+    font-family: Italliana, serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #3a2f2a;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+/* input */
+.checkout-box input {
+    padding: 10px 12px;
+    border: 1px solid #d6c6b8;
+    border-radius: 10px;
+    outline: none;
+    background: #fffaf6;
+    font-size: 0.95rem;
+    transition: 0.2s ease;
+}
+
+.checkout-box input:focus {
+    border-color: #a88f7b;
+    box-shadow: 0 0 0 2px rgba(168, 143, 123, 0.2);
+}
+
+/* butoane */
+.checkout-box button {
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    font-size: 0.95rem;
+    transition: 0.3s ease;
+}
+
+/* buton de trimite */
+#trimiteComanda {
+    background: #3a2f2a;
+    color: white;
+}
+
+#trimiteComanda:hover {
+    background: #5a4b42;
+}
+
+/* buton de inchidere */
+#inchideCheckout {
+    background: transparent;
+    border: 1px solid #b9a99a;
+    color: #3a2f2a;
+}
+
+#inchideCheckout:hover {
+    background: #e0d6cd;
+}
+
+/* responsive */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* tablets sau telefon */
+
+@media (max-width: 768px) {
+
+    /* logo + meniu */
+    .logo {
+        font-size: 3rem;
+    }
+
+    .nav-links {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-links a {
+        font-size: 1.1rem;
+    }
+
+    /* homepage */
+    .headline {
+        font-size: 2rem;
+    }
+
+    .hero-box {
+        height: 350px;
+    }
+
+    .btn-main {
+        padding: 14px 45px;
+        font-size: 1.2rem;
+    }
+
+    /* grid produse */
+    .products-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    /* modal */
+    .modal-body {
+        flex-direction: column;
+        height: auto;
+        gap: 25px;
+    }
+
+    /* coș */
+    .cart-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .cart-item {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    /* personalizat */
+    .personalizat-wrapper {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
+
+/* tel mic */
+
+@media (max-width: 480px) {
+
+    .logo {
+        font-size: 2.5rem;
+    }
+
+    .headline {
+        font-size: 1.6rem;
+    }
+
+    .hero-box {
+        height: 280px;
+    }
+
+    .nav-links a {
+        font-size: 1rem;
+    }
+
+    .btn-main {
+        font-size: 1rem;
+        padding: 12px 30px;
+    }
+}

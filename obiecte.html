@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savie - Obiecte</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Italianno&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<body class="pagina-obiecte">
+
+<!-- header-->
+<header class="main-header">
+    <a href="index.html" class="logo">Savie</a>
+
+    <nav>
+        <ul class="nav-links">
+            <li><a href="picturi.html">Picturi</a></li>
+            <li><a href="obiecte.html" class="active">Obiecte</a></li>
+            <li><a href="personalizat.html">Personalizat</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- bara de sus -->
+<div class="full-width-bar">
+    <div class="bar-content">
+
+        <div class="dots">
+            <span></span><span></span>
+            <span></span><span></span>
+        </div>
+
+        <span class="bar-title">Obiecte</span> 
+
+    </div>
+</div>
+
+<!-- produse -->
+<main class="content-wrapper">
+    <div class="products-grid">
+
+        <a href="#" class="product-card">
+            <div class="img-holder"><img src="imagini/ob6.jpg"></div>
+            <h3>Ana</h3>
+            <p class="price">12 000 lei</p>
+        </a>
+
+        <a href="#" class="product-card">
+            <div class="img-holder"><img src="imagini/ob3.jpg"></div>
+            <h3>Amarul</h3>
+            <p class="price">8 500 lei</p>
+        </a>
+
+        <a href="#" class="product-card">
+            <div class="img-holder"><img src="imagini/ob1.jpg"></div>
+            <h3>Eliza</h3>
+            <p class="price">17 500 lei</p>
+        </a>
+
+        <a href="#" class="product-card">
+            <div class="img-holder"><img src="imagini/ob2.jpg"></div>
+            <h3>Rue</h3>
+            <p class="price">14 000 lei</p>
+        </a>
+
+        <a href="#" class="product-card">
+            <div class="img-holder"><img src="imagini/ob4.jpg"></div>
+            <h3>Frumoasele</h3>
+            <p class="price">10 500 lei</p>
+        </a>
+
+        <a href="#" class="product-card">
+            <div class="img-holder"><img src="imagini/ob5.jpg"></div>
+            <h3>Ale ei 100 de ciori</h3>
+            <p class="price">10 000 lei</p>
+        </a>
+
+    </div>
+</main>
+
+<!-- modal -->
+<div id="product-modal" class="modal">
+
+    <div class="modal-layout-container">
+
+        <!-- buton x -->
+        <button class="close-modal">×</button>
+
+        <!-- bara de sus -->
+        <div class="modal-top-bar">
+            <div class="breadcrumb-dots">
+                <span></span><span></span>
+                <span></span><span></span>
+            </div>
+
+            <div class="breadcrumb-text">
+                <span id="modal-category"></span> > <span id="modal-name"></span>
+            </div>
+        </div>
+
+        <!-- corp -->
+        <div class="modal-body">
+
+            <!-- imaginea stanga -->
+            <div class="product-visual">
+                <div class="product-image-border">
+                    <img id="modal-img" src="" alt="">
+                </div>
+                <p id="modal-size"></p>
+            </div>
+
+            <!-- informatie dreapta -->
+            <div class="product-info-side">
+
+                <!-- titlu si descriere -->
+                <div class="top-info">
+                    <h2 id="modal-price"></h2>
+                    <p id="modal-description"></p>
+                </div>
+
+                <!-- cantitate -->
+                <div class="qty-group">
+                    <label>Cantitatea:</label>
+
+                    <div class="qty-custom-wrapper">
+                        <button type="button" class="arrow-down">−</button>
+                        <input type="number" value="1" min="1" class="qty-input">
+                        <button type="button" class="arrow-up">+</button>
+                    </div>
+                </div>
+
+
+                <!-- butonul cumpara -->
+                <button class="buy-btn">Cumpără!</button>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- script -->
+<script src="hover.js"></script>
+</body>
