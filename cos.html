@@ -35,19 +35,31 @@
     <div class="cart-summary">
         <h2>Comanda ta:</h2>
         <div id="total-box">Total: 0 lei</div>
+
         <!-- formular ascuns la comanda -->
-<div id="checkout-modal" class="checkout-modal">
+<form id="checkout-modal" class="checkout-modal">
+
     <div class="checkout-box">
+
         <h2>Date de livrare</h2>
-        <input type="text" id="nume" placeholder="Nume">
-        <input type="text" id="prenume" placeholder="Prenume">
-        <input type="text" id="telefon" placeholder="Număr de telefon">
-        <input type="text" id="adresa" placeholder="Adresă">
-        <input type="email" id="email" placeholder="Email">
-        <button id="trimiteComanda">Trimite comanda</button>
-        <button id="inchideCheckout">Închide</button>
+
+        <!-- Web3Forms key -->
+        <input type="hidden" name="access_key" value="5b515163-7467-499f-aea9-46dfda5e3e92">
+
+        <input type="text" name="nume" id="nume" placeholder="Nume">
+        <input type="text" name="prenume" id="prenume" placeholder="Prenume">
+        <input type="text" name="telefon" id="telefon" placeholder="Număr de telefon">
+        <input type="text" name="adresa" id="adresa" placeholder="Adresă">
+        <input type="email" name="email" id="email" placeholder="Email">
+
+        <!--  submit -->
+       <button type="button" id="trimiteComanda">Trimite comanda</button>
+        <!-- doar închidere -->
+        <button type="button" id="inchideCheckout">Închide</button>
+
     </div>
-</div>
+
+</form>
         <button class="checkout-btn" id="finalizeazaBtn">Finalizează comanda</button>
     </div>
 
